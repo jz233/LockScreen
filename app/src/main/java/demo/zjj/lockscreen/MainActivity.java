@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         dpm = (DevicePolicyManager) getSystemService(DEVICE_POLICY_SERVICE);
-        //Admin component
+        //Admin
         component = new ComponentName(this,LockScreenReceiver.class);
         if(dpm.isAdminActive(component)){   //one-touch lock screen
             dpm.lockNow();
@@ -45,6 +45,9 @@ public class MainActivity extends Activity {
         intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION,
                "EXTRA_ADD_EXPLANATION");
         startActivity(intent);
+//        startActivityForResult(intent, 0);
+        // return false - don't update checkbox until we're really active
+//        return false;  startActivityForR
 
     }
 
