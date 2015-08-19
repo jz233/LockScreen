@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LockScreen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sample_device_admin">sample_device_admin</string>
+    <string name="sample_device_admin_description">sample_device_admin_description</string>
+    <string name="title_activity_uninstall">UninstallActivity</string>
+</resources>
