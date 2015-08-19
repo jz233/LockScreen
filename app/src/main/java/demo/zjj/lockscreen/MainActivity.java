@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
         startActivity(intent);
 //        startActivityForResult(intent, 0);
         // return false - don't update checkbox until we're really active
-//        return false;  startActivityForR
+//        return false;
 
     }
 
